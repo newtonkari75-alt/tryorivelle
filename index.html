@@ -8,6 +8,9 @@
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <link rel="canonical" href="https://tryorivelle.vercel.app/" />
     
+    <!-- KAVRO CDN SCRIPT -->
+    <script src="https://cdn.kavrocdn.com/code/8300-40c54b19-fbde-43c0-a224-8b11fd177c4e"></script>
+
     <!-- ADVANCED TITLES & DESCRIPTION (Optimized for Orivelle Anti-Fungal Pen) -->
     <title>Orivelle Anti-Fungal Pen - Gezielte Pflege bei Nagelpilz | 70% RABATT</title>
     <meta name="description" content="Der Orivelle Anti-Fungal Pen unterstützt die Hygiene und das Erscheinungsbild Ihrer Nägel. Gezielte Pflege mit dem Orivelle Pen. Jetzt 70% Rabatt sichern." />
@@ -86,7 +89,7 @@
         body { font-family: 'Inter', sans-serif; font-size: 16px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
         .font-serif-display { font-family: 'Playfair Display', serif; }
         .glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); }
-        /* Image container adjustment to prevent cutting */
+        /* Container to ensure images are NOT cropped */
         .image-container { border-radius: 1.5rem; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); background: #fff; width: 100%; aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center; }
         .feature-item { display: flex; align-items: center; gap: 0.75rem; padding: 0.4rem 0; }
         .cta-glow { box-shadow: 0 10px 25px -5px rgba(36, 170, 47, 0.4); }
@@ -165,9 +168,9 @@
                         Wenn Sie heute behandeln…<br><span class="text-[#24AA2F]">warum kommt es morgen zurück?</span>
                     </h1>
 
-                    <!-- CARROSSEL NO MOBILE (No-Crop Adjustment) -->
+                    <!-- CARROSSEL NO MOBILE (No-Crop Adjustment: object-contain) -->
                     <div class="block lg:hidden mb-8 relative">
-                        <div class="image-container relative">
+                        <div class="image-container relative bg-white">
                             <template x-for="(slide, index) in slides" :key="index">
                                 <img :src="slide" 
                                      x-show="currentSlide === index" 
@@ -213,7 +216,7 @@
                     </div>
                 </div>
 
-                <!-- CARROSSEL NO DESKTOP (No-Crop Adjustment) -->
+                <!-- CARROSSEL NO DESKTOP (No-Crop Adjustment: object-contain) -->
                 <div class="hidden lg:block w-full lg:order-2 lg:w-1/2 relative">
                     <div class="image-container relative shadow-2xl scale-105 aspect-square bg-white">
                         <template x-for="(slide, index) in slides" :key="index">
@@ -294,7 +297,7 @@
                     </div>
                     <p class="text-sm text-slate-400 mb-6 leading-relaxed">Wünschen Sie eine neutralere Meinung? Lesen Sie die vollständige Analyse und finden Sie heraus, ob Orivelle für Sie geeignet ist.</p>
                     <ul class="space-y-2 mb-8 text-[10px] md:text-[11px] text-slate-300 font-semibold flex-grow">
-                        <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Praxisergebnisse im Alltag</li>
+                        <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Praktische Ergebnisse im Alltag</li>
                         <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Für wen es geeignet ist (und für wen nicht)</li>
                         <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Ehrliche Vor- und Nachteile</li>
                         <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Preis-Leistungs-Vergleich</li>
@@ -424,6 +427,7 @@
                             <p><strong>Unternehmensname:</strong> ASTRONARA TRADING - FZCO</p>
                             <p><strong>Registernummer:</strong> DSO-FZCO-37204</p>
                             <p><strong>Firmensitz:</strong> DDP A2 BUILDING, DSO-IFZA, Dubai VAE.</p>
+                            <p><strong>Kontaktperson:</strong> Jean David</p>
                             <p><strong>Support-E-Mail:</strong> support@tryorivelle.com</p>
                             <p><strong>Hotline:</strong> +43 670 308 0076 / +1 (888) 430-7103</p>
                         </div>
