@@ -10,13 +10,13 @@
     
     <!-- ADVANCED TITLES & DESCRIPTION -->
     <title>Orivelle - Se você trata hoje, por que volta amanhã? | Oficial 70% OFF</title>
-    <meta name="description" content="Nagelpilz não some com mais força. Ele fica debaixo da unha. Orivelle é o stift de aplicação precisa que combate o fungo na raiz." />
+    <meta name="description" content="O Nagelpilz não desaparece apenas com cremes superficiais. O Orivelle é o stift de aplicação precisa que alcança o leito ungueal para combater o fungo na raiz." />
     
     <!-- OPEN GRAPH -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://tryorivelle.shop/" />
-    <meta property="og:title" content="Orivelle - Solução Prática Contra Fungos nas Unhas" />
-    <meta property="og:description" content="Recupere a aparência saudável das suas unhas. 70% OFF por tempo limitado." />
+    <meta property="og:title" content="Orivelle - Solução Profissional Contra Fungos nas Unhas" />
+    <meta property="og:description" content="Recupere unhas claras e saudáveis com aplicação precisa. 70% OFF e Frete Grátis hoje." />
     <meta property="og:image" content="images/orivelle.avif" />
 
     <!-- JSON-LD STRUCTURED DATA -->
@@ -24,9 +24,9 @@
     {
       "@context": "https://schema.org",
       "@type": "Product",
-      "name": "Orivelle",
+      "name": "Orivelle Stift",
       "image": "https://tryorivelle.shop/images/orivelle.avif",
-      "description": "Stift de aplicação precisa para combate a fungos e melhoria da aparência das unhas.",
+      "description": "Solução avançada em stift para tratamento de fungos nas unhas e restauração da aparência ungueal.",
       "brand": { "@type": "Brand", "name": "Orivelle" },
       "offers": {
         "@type": "AggregateOffer",
@@ -38,7 +38,7 @@
       },
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.7",
+        "ratingValue": "4.8",
         "reviewCount": "2915"
       }
     }
@@ -46,7 +46,6 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/faviconV2 (1).png">
     <link rel="shortcut icon" type="image/png" href="images/faviconV2 (1).png">
 
@@ -69,9 +68,16 @@
         .cta-glow { box-shadow: 0 10px 25px -5px rgba(36, 170, 47, 0.4); }
         [x-cloak] { display: none !important; }
         
+        .policy-content h2 { font-weight: 800; font-size: 1.25rem; color: #111; margin-top: 1.5rem; margin-bottom: 0.75rem; }
+        .policy-content h3 { font-weight: 700; font-size: 1rem; color: #333; margin-top: 1rem; }
+        .policy-content p { margin-bottom: 1rem; line-height: 1.6; }
+        .policy-content ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem; }
+        .policy-content table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; font-size: 0.8rem; }
+        .policy-content th, .policy-content td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        .policy-content th { background-color: #f8f8f8; }
+
         @media (max-width: 768px) {
             h1 { font-size: 1.85rem !important; line-height: 1.2 !important; }
-            .hero-p { font-size: 1rem !important; }
         }
     </style>
 </head>
@@ -102,8 +108,8 @@
             </div>
             
             <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
-                <a href="#options" class="hover:text-[#24AA2F] transition-colors">Opções</a>
-                <a href="#faq" class="hover:text-[#24AA2F] transition-colors">Perguntas frequentes</a>
+                <button @click="document.getElementById('options').scrollIntoView({behavior:'smooth'})" class="hover:text-[#24AA2F] transition-colors">Opções</button>
+                <button @click="document.getElementById('faq').scrollIntoView({behavior:'smooth'})" class="hover:text-[#24AA2F] transition-colors">Perguntas frequentes</button>
             </nav>
 
             <a href="https://orf5f.doctorthetran.com/l" class="bg-[#24AA2F] text-white px-5 md:px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-[#1b8023] transition-all shadow-md shadow-green-200/50 active:scale-95">
@@ -145,7 +151,7 @@
                                      x-transition:enter-start="opacity-0 transform scale-95"
                                      x-transition:enter-end="opacity-100 transform scale-100"
                                      class="absolute inset-0 w-full h-full object-cover" 
-                                     alt="Galeria Orivelle">
+                                     alt="Orivelle Unhas">
                             </template>
                         </div>
                     </div>
@@ -196,7 +202,7 @@
                                  x-transition:leave-start="opacity-100 translate-x-0"
                                  x-transition:leave-end="opacity-0 -translate-x-4"
                                  class="absolute inset-0 w-full h-full object-cover" 
-                                 alt="Galeria Orivelle">
+                                 alt="Galeria de Uso Orivelle">
                         </template>
                         
                         <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20">
@@ -248,8 +254,6 @@
                         <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Como usar (passo a passo)</li>
                         <li class="flex items-center gap-2"><span class="text-green-500">✓</span> O que esperar na semana 1 / 2 / 3</li>
                         <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Ingredientes e lógica da fórmula</li>
-                        <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Para quais casos funciona melhor</li>
-                        <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Avaliações reais de clientes</li>
                         <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Garantia e política de reembolso</li>
                     </ul>
                     <a href="https://itmvk.doctorovtech.com/l" class="flex items-center justify-center text-center w-full border-2 border-slate-200 text-slate-600 hover:border-[#24AA2F] hover:text-[#24AA2F] font-bold py-5 px-4 rounded-xl transition-all uppercase tracking-widest text-sm active:scale-95">
@@ -266,14 +270,12 @@
                     <p class="text-sm text-slate-400 mb-6 leading-relaxed">Quer uma opinião mais neutra? Leia a análise completa e descubra se Orivelle faz sentido para o seu caso.</p>
                     <ul class="space-y-2 mb-8 text-[10px] md:text-[11px] text-slate-300 font-semibold flex-grow">
                         <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Resultados práticos no dia a dia</li>
-                        <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Para quem funciona</li>
                         <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Prós e contras honestos</li>
-                        <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Comparação com alternativas</li>
                         <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Melhor custo-benefício</li>
                         <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Como evitar falsificações</li>
                     </ul>
                     <a href="https://9sm2n.doctorfox1ck.com/p" class="flex items-center justify-center text-center w-full bg-white text-slate-900 hover:bg-green-50 font-black py-5 px-4 rounded-xl transition-all uppercase tracking-widest text-sm active:scale-95">
-                        SIM, EU QUERO LER O RELATÓRIO DO TESTE
+                        SIM, EU QUERO LER A ANÁLISE
                     </a>
                 </div>
             </div>
@@ -289,7 +291,7 @@
                         <svg :class="{'rotate-180': active === 1}" class="w-5 h-5 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
                     <div x-show="active === 1" x-collapse class="px-6 pb-5 text-slate-500 text-sm">
-                        A fórmula foi feita para uso externo e aplicação localizada. Se você tem pele muito sensível ou condição prévia, faça um teste pequeno e siga as instruções.
+                        A fórmula foi feita para uso externo e aplicação localizada na unha. Se você tem pele muito sensível ao redor da unha, faça um teste pequeno e siga as instruções.
                     </div>
                 </div>
 
@@ -299,7 +301,7 @@
                         <svg :class="{'rotate-180': active === 2}" class="w-5 h-5 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
                     <div x-show="active === 2" x-collapse class="px-6 pb-5 text-slate-500 text-sm">
-                        Muita gente relata mudanças no aspecto em poucos dias, mas fungo em unha pode exigir consistência. Use 2x ao dia e mantenha a rotina.
+                        Muita gente relata mudanças no aspecto em poucos dias, mas fungo em unha exige consistência. Use 2x ao dia e mantenha a rotina até o crescimento da unha saudável.
                     </div>
                 </div>
 
@@ -309,7 +311,7 @@
                         <svg :class="{'rotate-180': active === 3}" class="w-5 h-5 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
                     <div x-show="active === 3" x-collapse class="px-6 pb-5 text-slate-500 text-sm">
-                        Depende da área tratada (um ou dois pés/mãos) e da frequência. Multi-packs são recomendados para tratamento completo e manutenção.
+                        Depende da área tratada e da frequência. Multi-packs são recomendados para garantir que o tratamento não seja interrompido antes do tempo necessário.
                     </div>
                 </div>
             </div>
@@ -332,13 +334,81 @@
         </div>
     </div>
 
+    <!-- Modals -->
+    <div x-show="showModal" class="fixed inset-0 z-[100] overflow-y-auto" x-cloak>
+        <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+            <div x-show="showModal" @click="closePolicy()" class="fixed inset-0 transition-opacity bg-slate-900/60 backdrop-blur-sm"></div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+            <div x-show="showModal" class="inline-block px-6 py-8 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-3xl shadow-2xl sm:my-8 sm:align-middle sm:max-w-4xl sm:w-full border border-slate-100">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-xl font-black text-slate-900 font-serif-display" x-text="modalTitle"></h3>
+                    <button @click="closePolicy()" class="text-slate-400 hover:text-slate-600 focus:outline-none bg-slate-50 p-2 rounded-full">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </button>
+                </div>
+                <div class="mt-2 policy-content text-slate-500 text-xs md:text-sm max-h-[60vh] overflow-y-auto pr-4 scrollbar-thin">
+                    
+                    <template x-if="modalType === 'terms'">
+                        <div>
+                            <h2>TERMS OF SALE</h2>
+                            <p>O uso do Orivelle em tryorivelle.com é regido pelos termos aqui estabelecidos. Ao realizar um pedido, você aceita estas condições.</p>
+                            <h3>Uso Pessoal</h3>
+                            <p>O produto Orivelle destina-se apenas ao uso pessoal e não comercial. A revenda sem autorização é proibida.</p>
+                            <h3>Arbitragem</h3>
+                            <p>Qualquer disputa será resolvida através de arbitragem confidencial vinculativa perante o DIAC (Dubai International Arbitration Centre).</p>
+                        </div>
+                    </template>
+
+                    <template x-if="modalType === 'privacy'">
+                        <div>
+                            <h2>Política de Privacidade</h2>
+                            <p>Protegemos os seus dados de acordo com o RGPD (Regulamento Geral sobre a Proteção de Dados da UE).</p>
+                            <h3>Dados Coletados</h3>
+                            <ul>
+                                <li>Processamento de pedidos: Nome, morada, e-mail, telefone.</li>
+                                <li>Pagamento: Dados de transação processados de forma segura (PCI-DSS).</li>
+                            </ul>
+                            <h3>Cookies</h3>
+                            <p>Utilizamos cookies para análise de tráfego e personalização de ofertas. Você pode desativá-los nas configurações do seu navegador.</p>
+                        </div>
+                    </template>
+
+                    <template x-if="modalType === 'shipping' || modalType === 'returns'">
+                        <div>
+                            <h2>Envio e Garantia de Satisfação</h2>
+                            <h3>Envio</h3>
+                            <p>Pedidos são processados e enviados em até 2 dias úteis. O prazo de entrega estimado é de 3 a 7 dias úteis.</p>
+                            <h3>Garantia</h3>
+                            <p>Oferecemos uma Garantia de Satisfação de 30 dias para o seu primeiro pedido. Se não estiver satisfeito, entre em contato via e-mail.</p>
+                            <h3>Devoluções</h3>
+                            <p>Todas as devoluções devem ser pré-aprovadas pelo suporte. Endereço: Orber Str. 10, 60386 Frankfurt am Main, Alemanha.</p>
+                        </div>
+                    </template>
+
+                    <template x-if="modalType === 'contact'">
+                        <div>
+                            <h2>Impressum / Contacto</h2>
+                            <p><strong>Operador:</strong> ASTRONARA TRADING - FZCO</p>
+                            <p><strong>Registro:</strong> DSO-FZCO-37204</p>
+                            <p><strong>Sede:</strong> DDP A2 BUILDING, DSO-IFZA, Dubai VAE.</p>
+                            <p><strong>E-mail de suporte:</strong> support@tryorivelle.com</p>
+                            <p><strong>Telefone:</strong> +43 670 308 0076 / +1 (888) 430-7103</p>
+                        </div>
+                    </template>
+
+                </div>
+                <div class="mt-8"><button type="button" @click="closePolicy()" class="w-full inline-flex justify-center px-6 py-4 text-xs font-black text-white bg-slate-900 rounded-xl uppercase">Fechar</button></div>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="bg-white py-12 px-6 border-t border-slate-100">
         <div class="max-w-7xl mx-auto text-center">
             <div class="flex flex-wrap justify-center gap-6 mb-8 text-[10px] font-black uppercase text-slate-400">
-                <button @click="openPolicy('shipping', 'Envio')" class="hover:text-[#24AA2F]">Envio</button>
-                <button @click="openPolicy('returns', 'Garantia')" class="hover:text-[#24AA2F]">Garantia</button>
-                <button @click="openPolicy('contact', 'Contato')" class="hover:text-[#24AA2F]">Contato</button>
+                <button @click="openPolicy('shipping', 'Envio e Entrega')" class="hover:text-[#24AA2F]">Envio</button>
+                <button @click="openPolicy('returns', 'Garantia de Satisfação')" class="hover:text-[#24AA2F]">Garantia</button>
+                <button @click="openPolicy('contact', 'Impressum / Contato')" class="hover:text-[#24AA2F]">Contato</button>
                 <button @click="openPolicy('privacy', 'Proteção de dados')" class="hover:text-[#24AA2F]">Proteção de dados</button>
                 <button @click="openPolicy('terms', 'Termos e Condições')" class="hover:text-[#24AA2F]">Termos e Condições</button>
             </div>
@@ -346,7 +416,7 @@
                 *Os resultados variam de pessoa para pessoa. Orivelle é para uso externo e não substitui orientação médica. Se você tem diabetes, imunidade baixa, dor intensa, feridas, inflamação ou suspeita de infecção grave, procure um profissional de saúde antes de usar.
             </p>
             <div class="text-[9px] font-bold text-slate-400">
-                <p>Parceiro Autorizado | ONNINEST / ORIVELLE | support@orivelle.com</p>
+                <p>Parceiro Autorizado | ASTRONARA TRADING FZCO / ORIVELLE | support@tryorivelle.com</p>
                 <p>&copy; 2026 Orivelle. Todos os direitos reservados.</p>
             </div>
             <div class="bg-slate-50 p-4 mt-8 rounded-2xl text-left border border-slate-100 max-w-4xl mx-auto">
