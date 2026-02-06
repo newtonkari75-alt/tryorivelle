@@ -89,7 +89,7 @@
         body { font-family: 'Inter', sans-serif; font-size: 16px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
         .font-serif-display { font-family: 'Playfair Display', serif; }
         .glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); }
-        /* Container to ensure images are NOT cropped */
+        /* Container ensuring images are NOT cropped */
         .image-container { border-radius: 1.5rem; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); background: #fff; width: 100%; aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center; }
         .feature-item { display: flex; align-items: center; gap: 0.75rem; padding: 0.4rem 0; }
         .cta-glow { box-shadow: 0 10px 25px -5px rgba(36, 170, 47, 0.4); }
@@ -168,7 +168,7 @@
                         Wenn Sie heute behandeln…<br><span class="text-[#24AA2F]">warum kommt es morgen zurück?</span>
                     </h1>
 
-                    <!-- CARROSSEL NO MOBILE (No-Crop Adjustment: object-contain) -->
+                    <!-- CARROSSEL NO MOBILE (object-contain ensures no cropping) -->
                     <div class="block lg:hidden mb-8 relative">
                         <div class="image-container relative bg-white">
                             <template x-for="(slide, index) in slides" :key="index">
@@ -216,7 +216,7 @@
                     </div>
                 </div>
 
-                <!-- CARROSSEL NO DESKTOP (No-Crop Adjustment: object-contain) -->
+                <!-- CARROSSEL NO DESKTOP (object-contain ensures no cropping) -->
                 <div class="hidden lg:block w-full lg:order-2 lg:w-1/2 relative">
                     <div class="image-container relative shadow-2xl scale-105 aspect-square bg-white">
                         <template x-for="(slide, index) in slides" :key="index">
@@ -347,7 +347,7 @@
         </section>
     </main>
 
-    <!-- Floating Footer CTA -->
+    <!-- Floating Footer CTA (DTC) -->
     <div class="fixed bottom-0 left-0 right-0 glass border-t border-green-100 p-3 md:p-5 z-50 shadow-lg">
         <div class="max-w-7xl mx-auto flex items-center justify-between gap-4 px-2 md:px-4">
             <div class="flex flex-col text-left">
@@ -374,7 +374,7 @@
                 <button @click="openPolicy('terms', 'Verkaufsbedingungen')" class="hover:text-[#24AA2F]">Bedingungen</button>
             </div>
 
-            <!-- Health Disclaimer -->
+            <!-- Health Disclaimer (Google Compliance) -->
             <p class="text-[10px] text-slate-500 mb-8 max-w-4xl mx-auto leading-relaxed border-t border-slate-50 pt-8 italic">
                 *<strong>WICHTIGER HINWEIS:</strong> Ergebnisse können individuell variieren. Orivelle Anti-Fungal Pen ist ein kosmetisches Produkt zur äußerlichen Pflege und ersetzt keine professionelle medizinische Beratung, Diagnose oder Behandlung durch einen Arzt. Bei Vorerkrankungen wie Diabetes, Durchblutungsstörungen oder akuten Entzündungen konsultieren Sie bitte vor Gebrauch einen Arzt.
             </p>
