@@ -4,42 +4,64 @@
     <!-- TECHNICAL SEO & PERFORMANCE 2026 -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <link rel="canonical" href="https://tryorivelle.shop/" />
+    <link rel="canonical" href="https://tryorivelle.vercel.app/" />
     
-    <!-- ADVANCED TITLES & DESCRIPTION (Compliance Google Ads DE) -->
-    <title>Orivelle - Wenn Sie heute behandeln, warum kommt es morgen zurück? | Offiziell 70% RABATT</title>
-    <meta name="description" content="Nagelpilz verschwindet nicht durch bloßen Druck. Orivelle ist der Präzisionsstift, der hilft, das Erscheinungsbild gesunder Nägel zu unterstützen." />
+    <!-- ADVANCED TITLES & DESCRIPTION (Optimized for Orivelle Anti-Fungal Pen) -->
+    <title>Orivelle Anti-Fungal Pen - Gezielte Pflege bei Nagelpilz | 70% RABATT</title>
+    <meta name="description" content="Der Orivelle Anti-Fungal Pen unterstützt die Hygiene und das Erscheinungsbild Ihrer Nägel. Gezielte Pflege mit dem Orivelle Pen. Jetzt 70% Rabatt sichern." />
+    <meta name="keywords" content="Orivelle, Orivelle Anti-Fungal Pen, Orivelle Anti-Fungal, Orivelle Pen, Nagelpilz Stift, Nagelpflege Deutschland" />
     
-    <!-- OPEN GRAPH -->
+    <!-- OPEN GRAPH / FACEBOOK / WHATSAPP -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://tryorivelle.shop/" />
-    <meta property="og:title" content="Orivelle - Die praktische Lösung für gepflegte Nägel" />
-    <meta property="og:description" content="Unterstützt das Wachstum klarer und gesunder Nägel. Heute 70% RABATT und kostenloser Versand." />
+    <meta property="og:url" content="https://tryorivelle.vercel.app/" />
+    <meta property="og:title" content="Orivelle Anti-Fungal Pen - Professionelle Nagelpflege" />
+    <meta property="og:description" content="Unterstützt das Erscheinungsbild gesunder Nägel. Präzise Anwendung mit dem Orivelle Pen. Gratis Versand heute." />
     <meta property="og:image" content="images/orivelle.avif" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:site_name" content="Orivelle Deutschland" />
+
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Orivelle Anti-Fungal Pen - Jetzt 70% Rabatt" />
+    <meta name="twitter:description" content="Gezielte Nagelhygiene mit dem Orivelle Pen. Jetzt online bestellen." />
+    <meta name="twitter:image" content="images/orivelle.avif" />
 
     <!-- JSON-LD STRUCTURED DATA -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Product",
-      "name": "Orivelle Stift",
-      "image": "https://tryorivelle.shop/images/orivelle.avif",
-      "description": "Präzisionsstift zur Unterstützung der Nagelhygiene und Verbesserung des Nagelbildes.",
-      "brand": { "@type": "Brand", "name": "Orivelle" },
+      "name": "Orivelle Anti-Fungal Pen",
+      "alternateName": ["Orivelle Anti-Fungal", "Orivelle Pen"],
+      "image": "https://tryorivelle.vercel.app/images/orivelle.avif",
+      "description": "Professioneller Präzisionsstift zur Unterstützung der Nagelhygiene und Verbesserung des optischen Nagelbildes bei Verfärbungen.",
+      "brand": { 
+        "@type": "Brand", 
+        "name": "Orivelle" 
+      },
+      "sku": "ORV-PEN-01",
+      "mpn": "ORV-AFP-2026",
       "offers": {
         "@type": "AggregateOffer",
         "url": "https://orf5f.doctorthetran.com/l",
         "priceCurrency": "EUR",
         "lowPrice": "9.99",
         "highPrice": "139.86",
+        "offerCount": "1",
         "availability": "https://schema.org/InStock",
-        "priceValidUntil": "2026-12-31"
+        "priceValidUntil": "2026-12-31",
+        "seller": {
+          "@type": "Organization",
+          "name": "Orivelle Official"
+        }
       },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.8",
+        "bestRating": "5",
+        "worstRating": "1",
         "reviewCount": "2915"
       }
     }
@@ -64,7 +86,8 @@
         body { font-family: 'Inter', sans-serif; font-size: 16px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
         .font-serif-display { font-family: 'Playfair Display', serif; }
         .glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); }
-        .image-container { border-radius: 1.5rem; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); background: #fff; width: 100%; aspect-ratio: 1/1; }
+        /* Image container adjustment to prevent cutting */
+        .image-container { border-radius: 1.5rem; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); background: #fff; width: 100%; aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center; }
         .feature-item { display: flex; align-items: center; gap: 0.75rem; padding: 0.4rem 0; }
         .cta-glow { box-shadow: 0 10px 25px -5px rgba(36, 170, 47, 0.4); }
         [x-cloak] { display: none !important; }
@@ -97,7 +120,7 @@
                 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#24AA2F] opacity-75"></span>
                 <span class="relative inline-flex rounded-full h-2 w-2 bg-[#24AA2F]"></span>
             </span>
-            Sonderangebot: Sparen Sie bis zu <span class="text-[#24AA2F] ml-1">70% RABATT</span> heute!
+            Sonderangebot: Sparen Sie heute bis zu <span class="text-[#24AA2F] ml-1">70% RABATT</span> mit Gratis-Versand!
         </span>
     </div>
 
@@ -105,16 +128,16 @@
     <header class="bg-white/95 backdrop-blur-md sticky top-[35px] md:top-[38px] z-[60] py-3 md:py-4 border-b border-green-50 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 md:px-6 flex justify-between items-center">
             <div class="flex items-center">
-                <img src="images/orivelle-logo.svg" alt="Orivelle Logo" class="h-7 md:h-10" onerror="this.src='https://placehold.co/140x35/24AA2F/FFFFFF?text=ORIVELLE';">
+                <img src="images/orivelle-logo.svg" alt="Orivelle Anti-Fungal Pen Logo" class="h-7 md:h-10" onerror="this.src='https://placehold.co/140x35/24AA2F/FFFFFF?text=ORIVELLE';">
             </div>
             
             <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
                 <button @click="document.getElementById('options').scrollIntoView({behavior:'smooth'})" class="hover:text-[#24AA2F] transition-colors">Optionen</button>
-                <button @click="document.getElementById('faq').scrollIntoView({behavior:'smooth'})" class="hover:text-[#24AA2F] transition-colors">FAQ</button>
+                <button @click="document.getElementById('faq').scrollIntoView({behavior:'smooth'})" class="hover:text-[#24AA2F] transition-colors">Häufige Fragen</button>
             </nav>
 
             <a href="https://orf5f.doctorthetran.com/l" class="bg-[#24AA2F] text-white px-5 md:px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-[#1b8023] transition-all shadow-md shadow-green-200/50 active:scale-95">
-                JETZT KAUFEN
+                Preise ansehen
             </a>
         </div>
     </header>
@@ -130,11 +153,11 @@
                     <div class="flex flex-col sm:flex-row items-center lg:items-start gap-2 mb-6">
                         <div class="flex text-yellow-400">
                             <template x-for="i in 5">
-                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                             </template>
                         </div>
                         <span class="text-[11px] md:text-xs font-bold text-slate-500 uppercase tracking-widest">
-                            Ausgezeichnete Bewertung | Über 2.915 zufriedene Kunden
+                            Ausgezeichnet bewertet | Über 2.915 zufriedene Anwender
                         </span>
                     </div>
 
@@ -142,7 +165,7 @@
                         Wenn Sie heute behandeln…<br><span class="text-[#24AA2F]">warum kommt es morgen zurück?</span>
                     </h1>
 
-                    <!-- CARROSSEL NO MOBILE -->
+                    <!-- CARROSSEL NO MOBILE (No-Crop Adjustment) -->
                     <div class="block lg:hidden mb-8 relative">
                         <div class="image-container relative">
                             <template x-for="(slide, index) in slides" :key="index">
@@ -151,18 +174,18 @@
                                      x-transition:enter="transition ease-out duration-500"
                                      x-transition:enter-start="opacity-0 transform scale-95"
                                      x-transition:enter-end="opacity-100 transform scale-100"
-                                     class="absolute inset-0 w-full h-full object-cover" 
-                                     alt="Orivelle Anwendung">
+                                     class="absolute inset-0 w-full h-full object-contain p-2" 
+                                     alt="Orivelle Anti-Fungal Pen Anwendung und Ergebnis">
                             </template>
                         </div>
                     </div>
 
                     <p class="hero-p text-base md:text-lg text-slate-600 mb-6 leading-relaxed font-medium">
-                        Nagelpilz verschwindet nicht durch „mehr Kraft“ oder einfaches Eincremen. Er sitzt tief unter dem Nagel, nutzt das feuchte Milieu und kehrt immer wieder zurück.
+                        Nagelprobleme verschwinden nicht durch bloßen Druck oder oberflächliche Cremes. Sie sitzen oft tiefer und nutzen das feuchte Milieu, um immer wieder zurückzukehren.
                     </p>
                     
                     <p class="text-sm md:text-base text-slate-700 mb-8 leading-relaxed border-l-4 border-green-300 pl-4 text-left font-semibold">
-                        Orivelle ist die praktische Lösung: Ein Präzisionsstift, der die Formel direkt an den Nagel und das Nagelbett bringt, um das Wachstum gesunder Nägel zu unterstützen.
+                        Orivelle ist die praktische Lösung: Ein Präzisionsstift, der die Formel gezielt aufträgt, um die Nagelhygiene zu unterstützen und das Wachstum optisch klarer Nägel zu fördern.
                     </p>
 
                     <p class="text-sm md:text-base text-slate-500 mb-8 italic text-left">
@@ -171,10 +194,10 @@
 
                     <!-- Features List -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-0.5 mb-10 text-left max-w-sm mx-auto lg:mx-0">
-                        <div class="feature-item"><span class="text-[#24AA2F] font-bold">✓</span><span class="text-xs font-bold text-slate-700 uppercase">PRÄZISIONSSTIFT (STIFT)</span></div>
-                        <div class="feature-item"><span class="text-[#24AA2F] font-bold">✓</span><span class="text-xs font-bold text-slate-700 uppercase">GEZIELTE ANWENDUNG</span></div>
-                        <div class="feature-item"><span class="text-[#24AA2F] font-bold">✓</span><span class="text-xs font-bold text-slate-700 uppercase">HILFT BEI VERFÄRBUNGEN</span></div>
-                        <div class="feature-item"><span class="text-[#24AA2F] font-bold">✓</span><span class="text-xs font-bold text-slate-700 uppercase">SCHNELLE ROUTINE (2x/Tag)</span></div>
+                        <div class="feature-item"><span class="text-[#24AA2F] font-bold">✓</span><span class="text-xs font-bold text-slate-700 uppercase">PRÄZISIONSSTIFT (APPLIKATOR)</span></div>
+                        <div class="feature-item"><span class="text-[#24AA2F] font-bold">✓</span><span class="text-xs font-bold text-slate-700 uppercase">GEZIELTE TIEFENHYGIENE</span></div>
+                        <div class="feature-item"><span class="text-[#24AA2F] font-bold">✓</span><span class="text-xs font-bold text-slate-700 uppercase">REDUZIERT OPTISCH GELBFÄRBUNG</span></div>
+                        <div class="feature-item"><span class="text-[#24AA2F] font-bold">✓</span><span class="text-xs font-bold text-slate-700 uppercase">SCHNELLE ROUTINE (2x/TAG)</span></div>
                         <div class="feature-item"><span class="text-[#24AA2F] font-bold">✓</span><span class="text-xs font-bold text-slate-700 uppercase">OHNE AGGRESSIVE CHEMIE</span></div>
                         <div class="feature-item"><span class="text-[#24AA2F] font-bold">✓</span><span class="text-xs font-bold text-slate-700 uppercase">30 TAGE GARANTIE</span></div>
                     </div>
@@ -190,9 +213,9 @@
                     </div>
                 </div>
 
-                <!-- CARROSSEL NO DESKTOP -->
+                <!-- CARROSSEL NO DESKTOP (No-Crop Adjustment) -->
                 <div class="hidden lg:block w-full lg:order-2 lg:w-1/2 relative">
-                    <div class="image-container relative shadow-2xl scale-105 aspect-square">
+                    <div class="image-container relative shadow-2xl scale-105 aspect-square bg-white">
                         <template x-for="(slide, index) in slides" :key="index">
                             <img :src="slide" 
                                  x-show="currentSlide === index" 
@@ -202,14 +225,14 @@
                                  x-transition:leave="transition ease-in duration-500"
                                  x-transition:leave-start="opacity-100 translate-x-0"
                                  x-transition:leave-end="opacity-0 -translate-x-4"
-                                 class="absolute inset-0 w-full h-full object-cover" 
-                                 alt="Orivelle Gallerie">
+                                 class="absolute inset-0 w-full h-full object-contain p-4" 
+                                 alt="Orivelle Pen Produktgalerie für gesunde Nägel">
                         </template>
                         
                         <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20">
                             <template x-for="(slide, index) in slides" :key="index">
                                 <div class="w-2 h-2 rounded-full transition-all duration-300" 
-                                     :class="currentSlide === index ? 'bg-[#24AA2F] w-6' : 'bg-white/50'"></div>
+                                     :class="currentSlide === index ? 'bg-[#24AA2F] w-6' : 'bg-slate-200'"></div>
                             </template>
                         </div>
                     </div>
@@ -228,7 +251,7 @@
                 <div class="bg-white rounded-[2rem] p-8 md:p-10 border-4 border-[#24AA2F] shadow-xl relative flex flex-col z-10 lg:scale-105">
                     <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#24AA2F] text-white text-[10px] font-black px-6 py-2 rounded-full uppercase tracking-widest whitespace-nowrap shadow-md">EMPFOHLENE OPTION</div>
                     <div class="mb-6">
-                        <h3 class="text-xl md:text-2xl font-black text-[#1b8023] uppercase leading-tight mb-1">SICHERN SIE SICH 70% RABATT</h3>
+                        <h3 class="text-xl md:text-2xl font-black text-[#1b8023] uppercase leading-tight mb-1">BIS ZU 70% RABATT SICHERN</h3>
                         <p class="text-xs font-bold text-slate-400 uppercase tracking-tighter">DIREKT ZUM SICHEREN CHECKOUT</p>
                     </div>
                     <p class="text-sm text-slate-600 mb-6 leading-relaxed">Ideal, wenn Sie das Problem jetzt lösen und sich den besten Preis auf der offiziellen Seite sichern möchten – ohne Umwege.</p>
@@ -271,7 +294,7 @@
                     </div>
                     <p class="text-sm text-slate-400 mb-6 leading-relaxed">Wünschen Sie eine neutralere Meinung? Lesen Sie die vollständige Analyse und finden Sie heraus, ob Orivelle für Sie geeignet ist.</p>
                     <ul class="space-y-2 mb-8 text-[10px] md:text-[11px] text-slate-300 font-semibold flex-grow">
-                        <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Praktische Ergebnisse im Alltag</li>
+                        <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Praxisergebnisse im Alltag</li>
                         <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Für wen es geeignet ist (und für wen nicht)</li>
                         <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Ehrliche Vor- und Nachteile</li>
                         <li class="flex items-center gap-2"><span class="text-green-400">✓</span> Preis-Leistungs-Vergleich</li>
@@ -304,7 +327,7 @@
                         <svg :class="{'rotate-180': active === 2}" class="w-5 h-5 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
                     <div x-show="active === 2" x-collapse class="px-6 pb-5 text-slate-500 text-sm">
-                        Viele Anwender berichten von optischen Veränderungen bereits nach wenigen Tagen. Die Unterstützung bei Nagelproblemen erfordert jedoch Konsistenz: Wenden Sie das Produkt 2x täglich an, bis der gesunde Nagel vollständig nachgewachsen ist.
+                        Viele Anwender berichten von optischen Veränderungen bereits nach wenigen Tagen. Nagelpflege erfordert jedoch Konsistenz: Verwenden Sie den Stift 2x täglich, bis der gesunde Nagel vollständig nachgewachsen ist.
                     </div>
                 </div>
 
@@ -314,7 +337,7 @@
                         <svg :class="{'rotate-180': active === 3}" class="w-5 h-5 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
                     <div x-show="active === 3" x-collapse class="px-6 pb-5 text-slate-500 text-sm">
-                        Dies hängt von der Größe der behandelten Fläche und der Häufigkeit ab. Mehrfachpackungen werden empfohlen, um sicherzustellen, dass die Routine nicht unterbrochen wird, bevor der Nagelzyklus abgeschlossen ist.
+                        Dies hängt von der Größe der behandelten Fläche ab. Mehrfachpackungen werden empfohlen, um sicherzustellen, dass die Routine bis zum Ende des Nagelzyklus nicht unterbrochen wird.
                     </div>
                 </div>
             </div>
@@ -337,7 +360,36 @@
         </div>
     </div>
 
-    <!-- Modals (Legal DE) -->
+    <!-- Footer -->
+    <footer class="bg-white py-12 px-6 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="flex flex-wrap justify-center gap-6 mb-8 text-[10px] font-black uppercase text-slate-400">
+                <button @click="openPolicy('shipping', 'Versand & Lieferung')" class="hover:text-[#24AA2F]">Versand</button>
+                <button @click="openPolicy('returns', 'Zufriedenheitsgarantie')" class="hover:text-[#24AA2F]">Garantie</button>
+                <button @click="openPolicy('contact', 'Impressum / Kontakt')" class="hover:text-[#24AA2F]">Kontakt</button>
+                <button @click="openPolicy('privacy', 'Datenschutzrichtlinie')" class="hover:text-[#24AA2F]">Datenschutz</button>
+                <button @click="openPolicy('terms', 'Verkaufsbedingungen')" class="hover:text-[#24AA2F]">Bedingungen</button>
+            </div>
+
+            <!-- Health Disclaimer -->
+            <p class="text-[10px] text-slate-500 mb-8 max-w-4xl mx-auto leading-relaxed border-t border-slate-50 pt-8 italic">
+                *<strong>WICHTIGER HINWEIS:</strong> Ergebnisse können individuell variieren. Orivelle Anti-Fungal Pen ist ein kosmetisches Produkt zur äußerlichen Pflege und ersetzt keine professionelle medizinische Beratung, Diagnose oder Behandlung durch einen Arzt. Bei Vorerkrankungen wie Diabetes, Durchblutungsstörungen oder akuten Entzündungen konsultieren Sie bitte vor Gebrauch einen Arzt.
+            </p>
+
+            <div class="text-[9px] font-bold text-slate-400">
+                <p>Autorisierter Handelspartner | ASTRONARA TRADING FZCO / ORIVELLE | support@tryorivelle.com</p>
+                <p>&copy; 2026 Orivelle. Alle Rechte vorbehalten.</p>
+            </div>
+
+            <div class="bg-slate-50 p-4 mt-8 rounded-2xl text-left border border-slate-100 max-w-4xl mx-auto">
+                <p class="text-[9px] text-slate-400 leading-relaxed font-medium uppercase tracking-tight">
+                    <strong>Hinweis:</strong> Diese Website fungiert als unabhängiges Informationsportal und eine autorisierte Testseite für den Orivelle Pen. Wir sind nicht der direkte Hersteller. Wir erhalten ggf. eine Provision für Verkäufe über Empfehlungslinks, was keinen Einfluss auf den Endpreis oder die fachliche Integrität hat.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
     <div x-show="showModal" class="fixed inset-0 z-[100] overflow-y-auto" x-cloak>
         <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
             <div x-show="showModal" @click="closePolicy()" class="fixed inset-0 transition-opacity bg-slate-900/60 backdrop-blur-sm"></div>
@@ -350,89 +402,37 @@
                     </button>
                 </div>
                 <div class="mt-2 policy-content text-slate-500 text-xs md:text-sm max-h-[60vh] overflow-y-auto pr-4 scrollbar-thin">
-                    
                     <template x-if="modalType === 'terms'">
                         <div>
                             <h2>VERKAUFSBEDINGUNGEN</h2>
-                            <p>Die Nutzung von Orivelle unter tryorivelle.com unterliegt den hier festgelegten Bedingungen. Mit der Bestellung akzeptieren Sie diese Nutzungsbedingungen.</p>
-                            <h3>Persönliche Nutzung</h3>
-                            <p>Das Produkt Orivelle ist ausschließlich für den persönlichen, nicht-kommerziellen Gebrauch bestimmt. Der unbefugte Weiterverkauf ist untersagt.</p>
-                            <h3>Haftungsbeschränkung</h3>
-                            <p>Jegliche Streitigkeiten werden durch ein verbindliches vertrauliches Schiedsverfahren gemäß den Regeln des DIAC (Dubai International Arbitration Centre) beigelegt.</p>
+                            <p>Die Nutzung von Orivelle Produkten unter tryorivelle.vercel.app unterliegt diesen Bedingungen. Mit Ihrer Bestellung akzeptieren Sie diese Nutzungsbedingungen.</p>
+                            <h3>1. Bestellung und Annahme</h3>
+                            <p>Wir behalten uns das Recht vor, Lieferungen an Personen ohne Angabe von Gründen zu verweigern.</p>
                         </div>
                     </template>
 
                     <template x-if="modalType === 'privacy'">
                         <div>
                             <h2>Datenschutzrichtlinie</h2>
-                            <p>Wir schützen Ihre Daten gemäß der DSGVO (Datenschutz-Grundverordnung der EU).</p>
-                            <h3>Erhobene Daten</h3>
-                            <ul>
-                                <li>Bestellabwicklung: Name, Adresse, E-Mail, Telefon.</li>
-                                <li>Zahlung: Transaktionsdaten werden sicher verarbeitet (PCI-DSS).</li>
-                            </ul>
-                            <h3>Cookies</h3>
-                            <p>Wir verwenden Cookies zur Verkehrsanalyse und Personalisierung von Angeboten. Sie können diese in den Einstellungen Ihres Browsers deaktivieren.</p>
-                        </div>
-                    </template>
-
-                    <template x-if="modalType === 'shipping' || modalType === 'returns'">
-                        <div>
-                            <h2>Versand und Zufriedenheitsgarantie</h2>
-                            <h3>Versand</h3>
-                            <p>Bestellungen werden innerhalb von 2 Werktagen bearbeitet. Die geschätzte Lieferzeit beträgt 3 bis 7 Werktage.</p>
-                            <h3>Garantie</h3>
-                            <p>Wir bieten eine 30-tägige Zufriedenheitsgarantie für Ihre erste Bestellung. Bei Unzufriedenheit kontaktieren Sie bitte den Support per E-Mail.</p>
-                            <h3>Rücksendungen</h3>
-                            <p>Alle Rücksendungen müssen vorab vom Support genehmigt werden. Adresse: Orber Str. 10, 60386 Frankfurt am Main, Deutschland.</p>
+                            <p>Orivelle verpflichtet sich zum Schutz Ihrer Privatsphäre gemäß DSGVO (EU) 2016/679.</p>
                         </div>
                     </template>
 
                     <template x-if="modalType === 'contact'">
                         <div>
                             <h2>Impressum / Kontakt</h2>
-                            <p><strong>Betreiber:</strong> ASTRONARA TRADING - FZCO</p>
+                            <p><strong>Unternehmensname:</strong> ASTRONARA TRADING - FZCO</p>
                             <p><strong>Registernummer:</strong> DSO-FZCO-37204</p>
-                            <p><strong>Sitz:</strong> DDP A2 BUILDING, DSO-IFZA, Dubai VAE.</p>
-                            <p><strong>E-Mail Support:</strong> support@tryorivelle.com</p>
-                            <p><strong>Telefon:</strong> +43 670 308 0076 / +1 (888) 430-7103</p>
+                            <p><strong>Firmensitz:</strong> DDP A2 BUILDING, DSO-IFZA, Dubai VAE.</p>
+                            <p><strong>Support-E-Mail:</strong> support@tryorivelle.com</p>
+                            <p><strong>Hotline:</strong> +43 670 308 0076 / +1 (888) 430-7103</p>
                         </div>
                     </template>
-
                 </div>
                 <div class="mt-8"><button type="button" @click="closePolicy()" class="w-full inline-flex justify-center px-6 py-4 text-xs font-black text-white bg-slate-900 rounded-xl uppercase">Schließen</button></div>
             </div>
         </div>
     </div>
-
-    <!-- Footer -->
-    <footer class="bg-white py-12 px-6 border-t border-slate-100">
-        <div class="max-w-7xl mx-auto text-center">
-            <div class="flex flex-wrap justify-center gap-6 mb-8 text-[10px] font-black uppercase text-slate-400">
-                <button @click="openPolicy('shipping', 'Versand & Lieferung')" class="hover:text-[#24AA2F]">Versand</button>
-                <button @click="openPolicy('returns', 'Zufriedenheitsgarantie')" class="hover:text-[#24AA2F]">Garantie</button>
-                <button @click="openPolicy('contact', 'Impressum / Kontakt')" class="hover:text-[#24AA2F]">Kontakt</button>
-                <button @click="openPolicy('privacy', 'Datenschutz')" class="hover:text-[#24AA2F]">Datenschutz</button>
-                <button @click="openPolicy('terms', 'Verkaufsbedingungen')" class="hover:text-[#24AA2F]">AGB</button>
-            </div>
-
-            <!-- Medical Disclaimer (Critical for Ad Blindagem DE) -->
-            <p class="text-[10px] text-slate-500 mb-8 max-w-4xl mx-auto leading-relaxed border-t border-slate-50 pt-8">
-                *<strong>WICHTIGER HINWEIS:</strong> Einzelne Ergebnisse können variieren und sind nicht garantiert. Orivelle ist ein kosmetisches Produkt zur äußerlichen Anwendung und ersetzt keine medizinische Diagnose oder professionelle Behandlung durch einen Arzt. Die Aussagen auf dieser Seite wurden nicht von einer lokalen Gesundheitsbehörde bewertet. Wenn Sie unter Vorerkrankungen wie Diabetes, Durchblutungsstörungen oder akuten Entzündungen leiden, konsultieren Sie vor der Anwendung einen Arzt.
-            </p>
-
-            <div class="text-[9px] font-bold text-slate-400">
-                <p>Autorisierter Handelspartner | ASTRONARA TRADING FZCO / ORIVELLE | support@tryorivelle.com</p>
-                <p>&copy; 2026 Orivelle. Alle Rechte vorbehalten.</p>
-            </div>
-
-            <div class="bg-slate-50 p-4 mt-8 rounded-2xl text-left border border-slate-100 max-w-4xl mx-auto">
-                <p class="text-[9px] text-slate-400 leading-relaxed font-medium uppercase tracking-tight">
-                    <strong>Hinweis zur Unabhängigkeit:</strong> Diese Website fungiert als unabhängiges Informationsportal und Testseite. Wir sind nicht der direkte Hersteller. Wir erhalten möglicherweise eine Vergütung für die Vermittlung von Verkäufen über Empfehlungslinks, was weder den Endpreis für den Verbraucher noch die technische Integrität der bereitgestellten Informationen beeinflusst.
-                </p>
-            </div>
-        </div>
-    </footer>
 
 </body>
 </html>
